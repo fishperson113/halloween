@@ -1,0 +1,21 @@
+{
+  "name": "halloween",
+  "displayName": "Kiroween",
+  "description": "This is a halloween VSCode theme making for Kiroween Hackathon",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "KiroTheme",
+        "uiTheme": "hc-black",
+        "path": "./themes/KiroTheme-color-theme.json"
+      }
+    ]
+  }
+}
