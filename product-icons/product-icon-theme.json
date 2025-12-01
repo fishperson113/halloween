@@ -1,41 +1,71 @@
 {
+  "fonts": [
+    {
+      "id": "kiroween-icons",
+      "src": [
+        {
+          "path": "./kiroween-icons.ttf",
+          "format": "truetype"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
   "iconDefinitions": {
     "pumpkin": {
-      "iconPath": "./icons/pumpkin.svg"
+      "fontCharacter": "\\uf107"
     },
     "eyeball": {
-      "iconPath": "./icons/eyeball.svg"
+      "fontCharacter": "\\uf104"
     },
     "dead-tree-branch": {
-      "iconPath": "./icons/dead-tree-branch.svg"
+      "fontCharacter": "\\uf103"
     },
     "lightning-bolt": {
-      "iconPath": "./icons/lightning-bolt.svg"
+      "fontCharacter": "\\uf106"
     },
     "witch-hat": {
-      "iconPath": "./icons/witch-hat.svg"
+      "fontCharacter": "\\uf109"
     },
     "cauldron": {
-      "iconPath": "./icons/cauldron.svg"
+      "fontCharacter": "\\uf101"
     },
     "coffin": {
-      "iconPath": "./icons/coffin.svg"
+      "fontCharacter": "\\uf102"
     },
     "skull": {
-      "iconPath": "./icons/skull.svg"
+      "fontCharacter": "\\uf108"
     },
     "haunted-eye": {
-      "iconPath": "./icons/haunted-eye.svg"
+      "fontCharacter": "\\uf105"
+    },
+    "files": {
+      "fontCharacter": "\\uf107"
+    },
+    "search": {
+      "fontCharacter": "\\uf104"
+    },
+    "source-control": {
+      "fontCharacter": "\\uf103"
+    },
+    "debug-alt": {
+      "fontCharacter": "\\uf106"
+    },
+    "extensions": {
+      "fontCharacter": "\\uf109"
+    },
+    "settings-gear": {
+      "fontCharacter": "\\uf101"
+    },
+    "terminal": {
+      "fontCharacter": "\\uf102"
+    },
+    "error": {
+      "fontCharacter": "\\uf108"
+    },
+    "warning": {
+      "fontCharacter": "\\uf107"
     }
-  },
-  "explorer-view-icon": "pumpkin",
-  // "search-view-icon": "eyeball",
-  // "scm-view-icon": "dead-tree-branch",
-  // "debug-view-icon": "lightning-bolt",
-  // "extensions-view-icon": "witch-hat",
-  // "settings-view-icon": "cauldron",
-  // "terminal-view-icon": "coffin",
-  // "error-icon": "skull",
-  // "info-icon": "haunted-eye",
-  // "warning-icon": "pumpkin"
+  }
 }

@@ -1,3 +1,7 @@
 node_modules
 *.vsix
 .env
+
+# Icon font generation artifacts (keep .ttf and .json, exclude preview files)
+product-icons/kiroween-icons.css
+product-icons/kiroween-icons.html
