@@ -55,7 +55,7 @@
 
         icons.forEach(async (iconName) => {
             try {
-                const response = await fetch(`product-icons/icons/${iconName}.svg`);
+                const response = await fetch(`shared-icons/${iconName}.svg`);
                 const svgText = await response.text();
                 
                 const item = document.createElement('div');

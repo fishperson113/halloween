@@ -17,6 +17,13 @@
         "path": "./themes/KiroTheme-color-theme.json"
       }
     ],
+    "iconThemes": [
+      {
+        "id": "kiroween-file-icons",
+        "label": "Kiroween File Icons",
+        "path": "./file-icons/file-icon-theme.json"
+      }
+    ],
     "productIconThemes": [
       {
         "id": "kiroween-icons",
@@ -27,7 +34,7 @@
   },
   "scripts": {
     "test": "node test-icons-pbt.js",
-    "build:icons": "icon-font-generator product-icons/icons/*.svg -o product-icons -n kiroween-icons --types ttf --height 1000 --normalize --codepoints product-icons/codepoints.json --json product-icons/icon-mapping.json"
+    "build:icons": "icon-font-generator shared-icons/*.svg -o product-icons -n kiroween-icons --types ttf --height 1000 --normalize --codepoints product-icons/codepoints.json --json product-icons/icon-mapping.json"
   },
   "devDependencies": {
     "fast-check": "^3.15.0",

@@ -32,7 +32,7 @@ const requiredIcons = [
 
 console.log('\n=== Checking SVG Files ===');
 requiredIcons.forEach(icon => {
-  const iconPath = path.join('product-icons', 'icons', icon);
+  const iconPath = path.join('shared-icons', icon);
   if (fs.existsSync(iconPath)) {
     pass(`${icon} exists`);
   } else {
@@ -133,7 +133,7 @@ if (fs.existsSync(packageJsonPath)) {
 // 5. Verify SVG technical specifications
 console.log('\n=== Checking SVG Technical Specifications ===');
 requiredIcons.forEach(icon => {
-  const iconPath = path.join('product-icons', 'icons', icon);
+  const iconPath = path.join('shared-icons', icon);
   if (fs.existsSync(iconPath)) {
     const svgContent = fs.readFileSync(iconPath, 'utf8');
     

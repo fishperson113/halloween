@@ -1,0 +1,31 @@
+{
+  "$schema": "vscode://schemas/icon-theme",
+  "iconDefinitions": {
+    "pumpkin": {
+      "iconPath": "../shared-icons/pumpkin.svg"
+    },
+    "skull": {
+      "iconPath": "../shared-icons/skull.svg"
+    },
+    "ghost": {
+      "iconPath": "../shared-icons/ghost.svg"
+    },
+    "scroll": {
+      "iconPath": "../shared-icons/scroll.svg"
+    },
+    "coffin": {
+      "iconPath": "../shared-icons/coffin.svg"
+    },
+    "coffin-open": {
+      "iconPath": "../shared-icons/coffin-open.svg"
+    }
+  },
+  "fileExtensions": {
+    "js": "pumpkin",
+    "ts": "skull",
+    "json": "ghost",
+    "md": "scroll"
+  },
+  "folder": "coffin",
+  "folderExpanded": "coffin-open"
+}
