@@ -14,58 +14,58 @@
   ],
   "iconDefinitions": {
     "pumpkin": {
-      "fontCharacter": "\\uf107"
+      "fontCharacter": "\\2717"
     },
     "eyeball": {
-      "fontCharacter": "\\uf104"
+      "fontCharacter": "\\2714"
     },
     "dead-tree-branch": {
-      "fontCharacter": "\\uf103"
+      "fontCharacter": "\\2713"
     },
     "lightning-bolt": {
-      "fontCharacter": "\\uf106"
+      "fontCharacter": "\\2716"
     },
     "witch-hat": {
-      "fontCharacter": "\\uf109"
+      "fontCharacter": "\\2719"
     },
     "cauldron": {
-      "fontCharacter": "\\uf101"
+      "fontCharacter": "\\2711"
     },
     "coffin": {
-      "fontCharacter": "\\uf102"
+      "fontCharacter": "\\2712"
     },
     "skull": {
-      "fontCharacter": "\\uf108"
+      "fontCharacter": "\\2718"
     },
     "haunted-eye": {
-      "fontCharacter": "\\uf105"
+      "fontCharacter": "\\2715"
     },
     "files": {
-      "fontCharacter": "\\uf107"
+      "fontCharacter": "\\2717"
     },
     "search": {
-      "fontCharacter": "\\uf104"
+      "fontCharacter": "\\2714"
     },
     "source-control": {
-      "fontCharacter": "\\uf103"
+      "fontCharacter": "\\2713"
     },
     "debug-alt": {
-      "fontCharacter": "\\uf106"
+      "fontCharacter": "\\2716"
     },
     "extensions": {
-      "fontCharacter": "\\uf109"
+      "fontCharacter": "\\2719"
     },
     "settings-gear": {
-      "fontCharacter": "\\uf101"
+      "fontCharacter": "\\2711"
     },
     "terminal": {
-      "fontCharacter": "\\uf102"
+      "fontCharacter": "\\2712"
     },
     "error": {
-      "fontCharacter": "\\uf108"
+      "fontCharacter": "\\2718"
     },
     "warning": {
-      "fontCharacter": "\\uf107"
+      "fontCharacter": "\\2717"
     }
   }
 }
