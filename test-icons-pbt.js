@@ -14,7 +14,7 @@ const NUM_RUNS = 100;
 
 // Helper function to get all SVG files
 function getAllSvgFiles() {
-  const iconsDir = 'shared-icons';
+  const iconsDir = 'assets';
   return fs.readdirSync(iconsDir)
     .filter(file => file.endsWith('.svg'))
     .map(file => path.join(iconsDir, file));
@@ -48,7 +48,7 @@ let allTestsPassed = true;
  * Property 1: SVG Structure Compliance
  * Feature: kiroween-product-icons, Property 1: SVG Structure Compliance
  * 
- * For any icon SVG file in the shared-icons/ directory, 
+ * For any icon SVG file in the assets/ directory, 
  * the file should have stroke="currentColor", fill="none", 
  * no gradient elements, and use the SVG namespace.
  * 
@@ -79,7 +79,7 @@ try {
  * Property 2: Consistent Stroke Width
  * Feature: kiroween-product-icons, Property 2: Consistent Stroke Width
  * 
- * For any icon SVG file in the shared-icons/ directory, 
+ * For any icon SVG file in the assets/ directory, 
  * the root SVG element should have stroke-width="2".
  * 
  * Validates: Requirements 2.2
@@ -105,7 +105,7 @@ try {
  * Property 3: Standard ViewBox
  * Feature: kiroween-product-icons, Property 3: Standard ViewBox
  * 
- * For any icon SVG file in the shared-icons/ directory, 
+ * For any icon SVG file in the assets/ directory, 
  * the root SVG element should have viewBox="0 0 24 24".
  * 
  * Validates: Requirements 2.4

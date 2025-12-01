@@ -2,22 +2,22 @@
   "$schema": "vscode://schemas/icon-theme",
   "iconDefinitions": {
     "pumpkin": {
-      "iconPath": "../shared-icons/pumpkin.svg"
+      "iconPath": "../assets/pumpkin.svg"
     },
     "skull": {
-      "iconPath": "../shared-icons/skull.svg"
+      "iconPath": "../assets/skull.svg"
     },
     "ghost": {
-      "iconPath": "../shared-icons/ghost.svg"
+      "iconPath": "../assets/ghost.svg"
     },
     "scroll": {
-      "iconPath": "../shared-icons/scroll.svg"
+      "iconPath": "../assets/scroll.svg"
     },
     "coffin": {
-      "iconPath": "../shared-icons/coffin.svg"
+      "iconPath": "../assets/coffin.svg"
     },
     "coffin-open": {
-      "iconPath": "../shared-icons/coffin-open.svg"
+      "iconPath": "../assets/coffin-open.svg"
     }
   },
   "fileExtensions": {

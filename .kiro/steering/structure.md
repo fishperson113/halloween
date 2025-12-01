@@ -11,23 +11,19 @@
 ## Directories
 
 ### `/themes`
-Contains the main color theme definition.
-- `KiroTheme-color-theme.json` - Complete theme with UI colors and token colors
-
-### `/file-icons`
-File icon theme (in development).
+Contains all theme definitions and generated assets.
+- `KiroTheme-color-theme.json` - Complete color theme with UI colors and token colors
 - `file-icon-theme.json` - File type icon mappings
-- `/icons` - Icon assets
-
-### `/product-icons`
-Product/UI icon theme (in development).
-- `product-icon-theme.json` - UI icon mappings
-- `/icons` - Icon assets
-- `spec.md` - Feature specification
-- `steering.md` - Development guidelines
+- `product-icon-theme.json` - Product/UI icon mappings
+- `kiroween-icons.ttf` - Generated icon font file
+- `icon-mapping.json` - Icon to Unicode codepoint mappings
+- `codepoints.json` - Icon codepoint definitions
+- `kiroween-icons.css` - Generated CSS (for reference)
+- `kiroween-icons.html` - Generated HTML preview (for reference)
 
 ### `/assets`
-Visual assets and documentation.
+Visual assets and icon source files.
+- `*.svg` - Source SVG files for icon generation
 - `pallete.png` - Color palette reference
 
 ### `/.vscode`

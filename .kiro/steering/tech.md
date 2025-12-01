@@ -26,10 +26,10 @@ Standard VSCode extension structure with JSON-based theme definitions.
    - Token colors (syntax highlighting)
    - Based on `hc-black` UI theme
 
-2. **File Icons** (`file-icons/file-icon-theme.json`)
+2. **File Icons** (`themes/file-icon-theme.json`)
    - Custom file type icons (in development)
 
-3. **Product Icons** (`product-icons/product-icon-theme.json`)
+3. **Product Icons** (`themes/product-icon-theme.json`)
    - Custom UI icons (in development)
 
 ## Common Commands

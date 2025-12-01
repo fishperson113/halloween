@@ -33,14 +33,14 @@ The product icons use a custom icon font generated from SVG sources. The font fi
 
 #### Regenerating the Icon Font
 
-If you modify any SVG icons in `shared-icons/`, regenerate the font:
+If you modify any SVG icons in `assets/`, regenerate the font:
 
 ```bash
 npm run build:icons
 ```
 
 This command:
-1. Reads all SVG files from `shared-icons/`
+1. Reads all SVG files from `assets/`
 2. Converts each SVG to a font glyph
 3. Generates `kiroween-icons.ttf` (TrueType font file)
 4. Generates `icon-mapping.json` (Unicode code point mappings)
@@ -63,12 +63,12 @@ Each icon is mapped to a Unicode code point in the Private Use Area (U+E001+):
 
 #### Adding New Icons
 
-1. Create an SVG file in `shared-icons/`
+1. Create an SVG file in `assets/`
    - Use `stroke="currentColor"` for color inheritance
    - Keep designs simple with path-based elements
    - Include a `viewBox` attribute
 2. Run `npm run build:icons` to regenerate the font
-3. Update `product-icons/product-icon-theme.json`:
+3. Update `themes/product-icon-theme.json`:
    - Add the icon to `iconDefinitions` with its font character from `icon-mapping.json`
    - Map it to VS Code icon identifiers as needed
 
@@ -83,11 +83,18 @@ For compatibility with the icon font generator, SVG files must:
 ### Project Structure
 
 ```
-shared-icons/           # Source SVG files (editable, shared between themes)
-product-icons/
-├── kiroween-icons.ttf  # Generated icon font (committed)
-├── icon-mapping.json   # Unicode mappings (committed)
-└── product-icon-theme.json  # Theme configuration
+assets/                 # Source SVG files and visual assets
+├── *.svg              # Icon source files
+└── pallete.png        # Color palette reference
+themes/
+├── KiroTheme-color-theme.json  # Color theme configuration
+├── file-icon-theme.json        # File icon theme configuration
+├── product-icon-theme.json     # Product icon theme configuration
+├── kiroween-icons.ttf          # Generated icon font (committed)
+├── icon-mapping.json           # Unicode mappings (committed)
+├── codepoints.json             # Icon codepoint mappings
+├── kiroween-icons.css          # Generated CSS (for reference)
+└── kiroween-icons.html         # Generated HTML preview (for reference)
 ```
 
 ## Color Palette

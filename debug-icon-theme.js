@@ -35,7 +35,7 @@ try {
 // 2. Check product-icon-theme.json
 console.log('\n2. Checking product-icon-theme.json...');
 try {
-  const themeJson = JSON.parse(fs.readFileSync('product-icons/product-icon-theme.json', 'utf8'));
+  const themeJson = JSON.parse(fs.readFileSync('themes/product-icon-theme.json', 'utf8'));
   
   // Check for required structure
   if (!themeJson.iconDefinitions) {
@@ -81,7 +81,7 @@ try {
 // 3. Check SVG files
 console.log('\n3. Checking SVG files...');
 try {
-  const themeJson = JSON.parse(fs.readFileSync('product-icons/product-icon-theme.json', 'utf8'));
+  const themeJson = JSON.parse(fs.readFileSync('themes/product-icon-theme.json', 'utf8'));
   const iconDefs = themeJson.iconDefinitions || {};
   
   for (const [iconName, iconDef] of Object.entries(iconDefs)) {
@@ -153,7 +153,7 @@ const knownVSCodeIcons = [
 ];
 
 try {
-  const themeJson = JSON.parse(fs.readFileSync('product-icons/product-icon-theme.json', 'utf8'));
+  const themeJson = JSON.parse(fs.readFileSync('themes/product-icon-theme.json', 'utf8'));
   const definedIcons = Object.keys(themeJson).filter(k => k !== 'iconDefinitions');
   
   console.log('Defined icon mappings:', definedIcons.length);

@@ -32,7 +32,7 @@ const requiredIcons = [
 
 console.log('\n=== Checking SVG Files ===');
 requiredIcons.forEach(icon => {
-  const iconPath = path.join('shared-icons', icon);
+  const iconPath = path.join('assets', icon);
   if (fs.existsSync(iconPath)) {
     pass(`${icon} exists`);
   } else {
@@ -42,7 +42,7 @@ requiredIcons.forEach(icon => {
 
 // 2. Verify product-icon-theme.json exists
 console.log('\n=== Checking Theme Configuration ===');
-const themeJsonPath = path.join('product-icons', 'product-icon-theme.json');
+const themeJsonPath = path.join('themes', 'product-icon-theme.json');
 if (fs.existsSync(themeJsonPath)) {
   pass('product-icon-theme.json exists');
   
@@ -116,7 +116,7 @@ if (fs.existsSync(packageJsonPath)) {
         if (iconTheme.label === 'Kiroween Icons') {
           pass('Theme label is correct');
         }
-        if (iconTheme.path === './product-icons/product-icon-theme.json') {
+        if (iconTheme.path === './themes/product-icon-theme.json') {
           pass('Theme path is correct');
         }
       } else {
@@ -133,7 +133,7 @@ if (fs.existsSync(packageJsonPath)) {
 // 5. Verify SVG technical specifications
 console.log('\n=== Checking SVG Technical Specifications ===');
 requiredIcons.forEach(icon => {
-  const iconPath = path.join('shared-icons', icon);
+  const iconPath = path.join('assets', icon);
   if (fs.existsSync(iconPath)) {
     const svgContent = fs.readFileSync(iconPath, 'utf8');
     

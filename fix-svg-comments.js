@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const iconsDir = 'shared-icons';
+const iconsDir = 'assets';
 const files = fs.readdirSync(iconsDir).filter(f => f.endsWith('.svg'));
 
 console.log(`Removing XML comments from ${files.length} SVG files...\n`);

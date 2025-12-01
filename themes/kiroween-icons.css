@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "kiroween-icons";
+    src: url("./kiroween-icons.ttf?280d1bdf6f2c31fba86ebed3b6c2e4ec") format("truetype");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: kiroween-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cauldron:before {
+    content: "\2711";
+}
+.icon-coffin:before {
+    content: "\2712";
+}
+.icon-dead-tree-branch:before {
+    content: "\2713";
+}
+.icon-eyeball:before {
+    content: "\2714";
+}
+.icon-haunted-eye:before {
+    content: "\2715";
+}
+.icon-lightning-bolt:before {
+    content: "\2716";
+}
+.icon-pumpkin:before {
+    content: "\2717";
+}
+.icon-skull:before {
+    content: "\2718";
+}
+.icon-witch-hat:before {
+    content: "\2719";
+}
