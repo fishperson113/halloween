@@ -1,0 +1,41 @@
+{
+  "iconDefinitions": {
+    "pumpkin": {
+      "iconPath": "./icons/pumpkin.svg"
+    },
+    "eyeball": {
+      "iconPath": "./icons/eyeball.svg"
+    },
+    "dead-tree-branch": {
+      "iconPath": "./icons/dead-tree-branch.svg"
+    },
+    "lightning-bolt": {
+      "iconPath": "./icons/lightning-bolt.svg"
+    },
+    "witch-hat": {
+      "iconPath": "./icons/witch-hat.svg"
+    },
+    "cauldron": {
+      "iconPath": "./icons/cauldron.svg"
+    },
+    "coffin": {
+      "iconPath": "./icons/coffin.svg"
+    },
+    "skull": {
+      "iconPath": "./icons/skull.svg"
+    },
+    "haunted-eye": {
+      "iconPath": "./icons/haunted-eye.svg"
+    }
+  },
+  "explorer-view-icon": "pumpkin",
+  // "search-view-icon": "eyeball",
+  // "scm-view-icon": "dead-tree-branch",
+  // "debug-view-icon": "lightning-bolt",
+  // "extensions-view-icon": "witch-hat",
+  // "settings-view-icon": "cauldron",
+  // "terminal-view-icon": "coffin",
+  // "error-icon": "skull",
+  // "info-icon": "haunted-eye",
+  // "warning-icon": "pumpkin"
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icon Test</title>
+    <style>
+        body {
+            background: #1e1e1e;
+            color: #fff;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .icon-item {
+            text-align: center;
+            padding: 10px;
+            background: #2d2d2d;
+            border-radius: 8px;
+        }
+        .icon-item svg {
+            width: 48px;
+            height: 48px;
+            stroke: #FF7A18;
+        }
+        .icon-name {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kiroween Icons Test</h1>
+    <p>If you see the icons below, the SVG files are valid:</p>
+    
+    <div class="icon-grid" id="iconGrid"></div>
+
+    <script>
+        const icons = [
+            'pumpkin',
+            'eyeball',
+            'dead-tree-branch',
+            'lightning-bolt',
+            'witch-hat',
+            'cauldron',
+            'coffin',
+            'skull',
+            'haunted-eye'
+        ];
+
+        const grid = document.getElementById('iconGrid');
+
+        icons.forEach(async (iconName) => {
+            try {
+                const response = await fetch(`product-icons/icons/${iconName}.svg`);
+                const svgText = await response.text();
+                
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.innerHTML = `
+                    ${svgText}
+                    <div class="icon-name">${iconName}</div>
+                `;
+                grid.appendChild(item);
+            } catch (error) {
+                console.error(`Failed to load ${iconName}:`, error);
+            }
+        });
+    </script>
+</body>
+</html>

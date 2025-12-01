@@ -13,9 +13,22 @@
     "themes": [
       {
         "label": "KiroTheme",
-        "uiTheme": "hc-black",
+        "uiTheme": "vs-dark",
         "path": "./themes/KiroTheme-color-theme.json"
       }
+    ],
+    "productIconThemes": [
+      {
+        "id": "kiroween-icons",
+        "label": "Kiroween Icons",
+        "path": "./product-icons/product-icon-theme.json"
+      }
     ]
+  },
+  "scripts": {
+    "test": "node test-icons-pbt.js"
+  },
+  "devDependencies": {
+    "fast-check": "^3.15.0"
   }
 }

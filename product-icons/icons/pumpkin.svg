@@ -1,12 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Pumpkin body -->
   <path d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
-  <!-- Stem -->
   <path d="M12 3 L12 1"/>
-  <!-- Left eye -->
   <path d="M9 11 L10 13 L8 13 Z"/>
-  <!-- Right eye -->
   <path d="M15 11 L16 13 L14 13 Z"/>
-  <!-- Mouth -->
   <path d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
 </svg>
