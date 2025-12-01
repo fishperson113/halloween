@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "File Icon SVG Optimizer",
+  "description": "Optimizes SVG files added to file-icons/icons directory with the same rules as product icons",
+  "version": "1",
+  "when": {
+    "type": "fileCreated",
+    "patterns": [
+      "file-icons/icons/*.svg"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A new SVG file has been added to file-icons/icons. Please optimize it by: 1) Running SVGO optimization to reduce file size, 2) Enforcing stroke-width=2 on all strokes, 3) Removing all fill attributes, 4) Ensuring the SVG is clean and minimal. Update the file with the optimized version."
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Outer eye shape -->
+  <path d="M3 12 C3 12 7 6 12 6 C17 6 21 12 21 12 C21 12 17 18 12 18 C7 18 3 12 3 12 Z"/>
+  <!-- Iris -->
+  <circle cx="12" cy="12" r="4"/>
+  <!-- Pupil -->
+  <circle cx="12" cy="12" r="2"/>
+  <!-- Eerie detail - veins -->
+  <path d="M8 9 L6 7"/>
+  <path d="M16 9 L18 7"/>
+  <path d="M8 15 L6 17"/>
+</svg>
