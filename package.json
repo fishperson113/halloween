@@ -1,13 +1,15 @@
 {
-  "name": "halloween",
+  "name": "halloween-kirotheme",
   "displayName": "Kiroween",
-  "description": "This is a halloween VSCode theme making for Kiroween Hackathon",
+  "description": "This is a halloween VSCode theme made for Kiroween Hackathon",
   "version": "0.0.1",
+  "publisher": "fishperson113",
   "engines": {
     "vscode": "^1.103.0"
   },
   "categories": [
-    "Themes"
+    "Themes",
+    "Other"
   ],
   "main": "./extension.js",
   "activationEvents": [
@@ -25,17 +27,17 @@
       {
         "id": "kiroween-icons",
         "label": "Kiroween Icons",
-        "path": "./themes/product-icon-theme.json"
+        "path": "./product-icons/product-icon-theme.json"
       }
     ],
     "commands": [
       {
-        "command": "kiroween.toggleBackground",
-        "title": "Kiroween: Toggle Halloween Background"
+        "command": "kiroween.activate",
+        "title": "Kiroween: Activate"
       },
       {
-        "command": "kiroween.showCssPath",
-        "title": "Kiroween: Show Background CSS Path"
+        "command": "kiroween.deactivate",
+        "title": "Kiroween: Deactivate"
       }
     ],
     "configuration": {
@@ -50,11 +52,10 @@
     }
   },
   "scripts": {
-    "test": "node test-icons-pbt.js",
-    "build:icons": "icon-font-generator assets/*.svg -o themes -n kiroween-icons --types ttf --height 1000 --normalize --codepoints themes/codepoints.json --json themes/icon-mapping.json"
+    "build:icons": "icon-font-generator assets/*.svg -o product-icons -n kiroween-icons --types ttf --height 1000 --normalize --codepoints product-icons/codepoints.json --json product-icons/icon-mapping.json"
   },
-  "devDependencies": {
-    "fast-check": "^3.15.0",
-    "icon-font-generator": "^2.1.11"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fishperson113/halloween.git"
   }
 }
