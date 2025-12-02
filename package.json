@@ -1,7 +1,7 @@
 {
   "name": "halloween-kirotheme",
   "displayName": "Kiroween",
-  "description": "This is a halloween VSCode theme made for Kiroween Hackathon",
+  "description": "Halloween VSCode theme made for Kiroween Hackathon",
   "version": "0.0.1",
   "publisher": "fishperson113",
   "engines": {
@@ -10,10 +10,6 @@
   "categories": [
     "Themes",
     "Other"
-  ],
-  "main": "./extension.js",
-  "activationEvents": [
-    "onStartupFinished"
   ],
   "contributes": {
     "themes": [
@@ -27,17 +23,7 @@
       {
         "id": "kiroween-icons",
         "label": "Kiroween Icons",
-        "path": "./product-icons/product-icon-theme.json"
-      }
-    ],
-    "commands": [
-      {
-        "command": "kiroween.activate",
-        "title": "Kiroween: Activate"
-      },
-      {
-        "command": "kiroween.deactivate",
-        "title": "Kiroween: Deactivate"
+        "path": "./themes/product-icon-theme.json"
       }
     ],
     "configuration": {
@@ -50,9 +36,6 @@
         }
       }
     }
-  },
-  "scripts": {
-    "build:icons": "icon-font-generator assets/*.svg -o product-icons -n kiroween-icons --types ttf --height 1000 --normalize --codepoints product-icons/codepoints.json --json product-icons/icon-mapping.json"
   },
   "repository": {
     "type": "git",

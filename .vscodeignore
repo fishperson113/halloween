@@ -1,4 +1,16 @@
+# Development directories
 .vscode/**
 .vscode-test/**
+.git/**
+.kiro/**
+
+# Generated preview files (not needed in package)
+themes/*.css
+themes/*.html
+
+# Git files
 .gitignore
+.gitattributes
+
+# Documentation
 vsc-extension-quickstart.md
