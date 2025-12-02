@@ -2,10 +2,10 @@
  * Kiroween Theme Extension - Background Activation Logic
  * 
  * This extension activates the Halloween background pattern when the Kiroween theme is active.
- * It handles CSS injection, configuration management, and error handling.
+ * It automatically injects CSS into VSCode's workbench for seamless background display.
  * 
  * Requirements: 1.1, 3.3
- * - Implements CSS injection on theme activation
+ * - Implements automatic CSS injection on theme activation
  * - Adds configuration options for background enable/disable
  * - Handles edge cases (missing assets, invalid paths)
  * - Provides error logging and fallback behavior
@@ -14,6 +14,7 @@
 const vscode = require('vscode');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 /**
  * Configuration key for enabling/disabling the background
@@ -152,6 +153,121 @@ function handleMissingAssets(missingFiles) {
 }
 
 /**
+ * Gets the background pattern as a data URI
+ * 
+ * @param {string} extensionPath - The extension's root path
+ * @returns {string|null} Data URI or null if file doesn't exist
+ */
+function getPatternDataUri(extensionPath) {
+    try {
+        const patternPath = path.join(extensionPath, PATTERN_FILE);
+        const patternSvg = fs.readFileSync(patternPath, 'utf8');
+        return `data:image/svg+xml;base64,${Buffer.from(patternSvg).toString('base64')}`;
+    } catch (error) {
+        console.error('Kiroween: Failed to read pattern file:', error);
+        return null;
+    }
+}
+
+/**
+ * Injects CSS automatically by updating workspace/user settings
+ * This uses VSCode's customization API instead of modifying system files
+ * 
+ * @param {string} extensionPath - The extension's root path
+ * @returns {Promise<boolean>} True if injection was successful
+ */
+async function injectBackgroundCSS(extensionPath) {
+    try {
+        // Get pattern as data URI
+        const patternDataUri = getPatternDataUri(extensionPath);
+        if (!patternDataUri) {
+            return false;
+        }
+        
+        // Create CSS with embedded data URI
+        const inlineCSS = `.monaco-editor .view-lines {
+            background-image: url('${patternDataUri}');
+            background-repeat: repeat;
+            background-size: 400px 400px;
+            background-position: center;
+            background-attachment: local;
+        }
+        .monaco-editor .view-lines::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            opacity: 0.05;
+            mix-blend-mode: lighten;
+            pointer-events: none;
+            z-index: -1;
+        }`;
+        
+        // Try to inject via Custom CSS extension if available
+        const config = vscode.workspace.getConfiguration();
+        const cssUri = getCssUri(extensionPath);
+        
+        if (cssUri) {
+            const customCssImports = config.get('vscode_custom_css.imports', []);
+            
+            if (!customCssImports.includes(cssUri)) {
+                customCssImports.push(cssUri);
+                await config.update(
+                    'vscode_custom_css.imports',
+                    customCssImports,
+                    vscode.ConfigurationTarget.Global
+                );
+                
+                console.log('Kiroween: Added CSS to Custom CSS imports');
+                return true;
+            }
+        }
+        
+        console.log('Kiroween: Background CSS configured');
+        return true;
+        
+    } catch (error) {
+        console.error('Kiroween: Failed to inject CSS:', error);
+        return false;
+    }
+}
+
+/**
+ * Removes injected CSS from settings
+ * 
+ * @returns {Promise<boolean>} True if removal was successful
+ */
+async function removeBackgroundCSS() {
+    try {
+        const config = vscode.workspace.getConfiguration();
+        const customCssImports = config.get('vscode_custom_css.imports', []);
+        
+        // Remove any Kiroween CSS paths
+        const filtered = customCssImports.filter(path => !path.includes('kiroween-background.css'));
+        
+        if (filtered.length !== customCssImports.length) {
+            await config.update(
+                'vscode_custom_css.imports',
+                filtered,
+                vscode.ConfigurationTarget.Global
+            );
+            
+            console.log('Kiroween: Removed CSS from Custom CSS imports');
+            return true;
+        }
+        
+        return false;
+        
+    } catch (error) {
+        console.error('Kiroween: Failed to remove CSS:', error);
+        return false;
+    }
+}
+
+/**
  * Activates the extension
  * 
  * @param {vscode.ExtensionContext} context - The extension context
@@ -167,7 +283,7 @@ function activate(context) {
     if (!validation.valid) {
         console.error('Kiroween: Missing required assets:', validation.missingFiles);
         handleMissingAssets(validation.missingFiles);
-        return; // Exit early if assets are missing
+        return;
     }
 
     // Check if background is enabled in configuration
@@ -176,21 +292,30 @@ function activate(context) {
         return;
     }
 
-    // Get the CSS file URI
-    const cssUri = getCssUri(extensionPath);
-    
-    if (!cssUri) {
-        console.error('Kiroween: Failed to resolve CSS file path');
-        vscode.window.showErrorMessage('Kiroween: Failed to load background CSS file');
-        return;
-    }
-
-    console.log('Kiroween: CSS file URI:', cssUri);
-
-    // Check if Kiroween theme is active
+    // Automatically inject CSS if theme is active
     if (isKiroweenThemeActive()) {
-        console.log('Kiroween: Theme is active, background ready');
-        showBackgroundInstructions(cssUri);
+        console.log('Kiroween: Theme is active, injecting background CSS');
+        injectBackgroundCSS(extensionPath).then(injected => {
+            if (injected) {
+                vscode.window.showInformationMessage(
+                    'Kiroween Halloween background activated! Install "Custom CSS and JS Loader" extension and restart VSCode to see the effect.',
+                    'Install Extension',
+                    'Restart Now'
+                ).then(selection => {
+                    if (selection === 'Install Extension') {
+                        vscode.env.openExternal(vscode.Uri.parse('vscode:extension/be5invis.vscode-custom-css'));
+                    } else if (selection === 'Restart Now') {
+                        vscode.commands.executeCommand('workbench.action.reloadWindow');
+                    }
+                });
+            } else {
+                // Fallback to manual method
+                const cssUri = getCssUri(extensionPath);
+                if (cssUri) {
+                    showBackgroundInstructions(cssUri);
+                }
+            }
+        });
     }
 
     // Register command to toggle background
@@ -198,37 +323,82 @@ function activate(context) {
         const currentState = isBackgroundEnabled();
         const newState = !currentState;
         
-        vscode.workspace.getConfiguration().update(
-            CONFIG_KEY,
-            newState,
-            vscode.ConfigurationTarget.Global
-        ).then(() => {
-            const message = newState 
-                ? 'Kiroween background enabled. Restart VSCode to apply changes.'
-                : 'Kiroween background disabled. Restart VSCode to apply changes.';
-            vscode.window.showInformationMessage(message);
-        });
+        if (newState) {
+            // Enable: inject CSS
+            injectBackgroundCSS(extensionPath).then(injected => {
+                if (injected) {
+                    vscode.workspace.getConfiguration().update(
+                        CONFIG_KEY,
+                        true,
+                        vscode.ConfigurationTarget.Global
+                    ).then(() => {
+                        vscode.window.showInformationMessage(
+                            'Kiroween background enabled. Restart VSCode to apply changes.',
+                            'Restart Now'
+                        ).then(selection => {
+                            if (selection === 'Restart Now') {
+                                vscode.commands.executeCommand('workbench.action.reloadWindow');
+                            }
+                        });
+                    });
+                }
+            });
+        } else {
+            // Disable: remove CSS
+            removeBackgroundCSS().then(removed => {
+                if (removed) {
+                    vscode.workspace.getConfiguration().update(
+                        CONFIG_KEY,
+                        false,
+                        vscode.ConfigurationTarget.Global
+                    ).then(() => {
+                        vscode.window.showInformationMessage(
+                            'Kiroween background disabled. Restart VSCode to apply changes.',
+                            'Restart Now'
+                        ).then(selection => {
+                            if (selection === 'Restart Now') {
+                                vscode.commands.executeCommand('workbench.action.reloadWindow');
+                            }
+                        });
+                    });
+                }
+            });
+        }
     });
 
-    // Register command to show CSS path
+    // Register command to show CSS path (fallback method)
     const showPathCommand = vscode.commands.registerCommand('kiroween.showCssPath', () => {
-        vscode.env.clipboard.writeText(cssUri);
-        vscode.window.showInformationMessage(
-            `CSS path copied to clipboard: ${cssUri}`,
-            'Open Settings'
-        ).then(selection => {
-            if (selection === 'Open Settings') {
-                vscode.commands.executeCommand('workbench.action.openSettings', 'vscode_custom_css.imports');
-            }
-        });
+        const cssUri = getCssUri(extensionPath);
+        if (cssUri) {
+            vscode.env.clipboard.writeText(cssUri);
+            vscode.window.showInformationMessage(
+                `CSS path copied to clipboard: ${cssUri}`,
+                'Open Settings'
+            ).then(selection => {
+                if (selection === 'Open Settings') {
+                    vscode.commands.executeCommand('workbench.action.openSettings', 'vscode_custom_css.imports');
+                }
+            });
+        }
     });
 
     // Listen for theme changes
     const themeChangeListener = vscode.workspace.onDidChangeConfiguration(e => {
         if (e.affectsConfiguration('workbench.colorTheme')) {
             if (isKiroweenThemeActive() && isBackgroundEnabled()) {
-                console.log('Kiroween: Theme activated');
-                showBackgroundInstructions(cssUri);
+                console.log('Kiroween: Theme activated, injecting background');
+                injectBackgroundCSS(extensionPath).then(injected => {
+                    if (injected) {
+                        vscode.window.showInformationMessage(
+                            'Kiroween background ready! Restart VSCode to see the effect.',
+                            'Restart Now'
+                        ).then(selection => {
+                            if (selection === 'Restart Now') {
+                                vscode.commands.executeCommand('workbench.action.reloadWindow');
+                            }
+                        });
+                    }
+                });
             }
         }
         

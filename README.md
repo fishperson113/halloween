@@ -19,7 +19,9 @@ A Halloween-themed VSCode extension created for the Kiroween Hackathon. Transfor
 
 ### Optional: Enable Halloween Background
 
-The Kiroween theme includes a subtle Halloween-themed background pattern that displays ghosts, pumpkins, skulls, and other spooky elements behind your code. This feature requires the "Custom CSS and JS Loader" extension.
+The Kiroween theme includes a subtle Halloween-themed background pattern that displays ghosts, pumpkins, skulls, and other spooky elements behind your code. 
+
+**⚠️ Important:** Due to VSCode limitations, background images require the "Custom CSS and JS Loader" extension. This is a one-time setup that takes ~2 minutes. The Kiroween extension will help you configure it automatically.
 
 #### Quick Setup
 

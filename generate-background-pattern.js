@@ -54,9 +54,14 @@ function applySVGColor(svgContent, color) {
     .replace(/stroke="currentColor"/g, `stroke="${color}"`)
     .replace(/fill="currentColor"/g, `fill="${color}"`);
   
-  // Add stroke color to path elements that don't have it
-  colored = colored.replace(/<path /g, `<path stroke="${color}" fill="none" `);
-  colored = colored.replace(/<circle /g, `<circle stroke="${color}" fill="${color}" `);
+  // Add stroke/fill to elements that don't already have them
+  // Use regex to check if attribute already exists
+  colored = colored.replace(/<path(?![^>]*stroke=)/g, `<path stroke="${color}"`);
+  colored = colored.replace(/<path(?![^>]*fill=)/g, `<path fill="none"`);
+  colored = colored.replace(/<circle(?![^>]*stroke=)/g, `<circle stroke="${color}"`);
+  colored = colored.replace(/<circle(?![^>]*fill=)/g, `<circle fill="${color}"`);
+  colored = colored.replace(/<rect(?![^>]*stroke=)/g, `<rect stroke="${color}"`);
+  colored = colored.replace(/<rect(?![^>]*fill=)/g, `<rect fill="none"`);
   
   return colored;
 }
@@ -107,7 +112,7 @@ function generateElementConfig(row, col, seed) {
  */
 function createSVGGroup(config, content) {
   const transform = `translate(${config.x}, ${config.y}) rotate(${config.rotation}) scale(${config.scale})`;
-  return `  <g transform="${transform}" opacity="0.15">
+  return `  <g transform="${transform}" opacity="0.3">
     ${content}
   </g>`;
 }

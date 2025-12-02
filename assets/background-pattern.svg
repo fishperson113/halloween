@@ -14,112 +14,112 @@
   <rect width="400" height="400" fill="none"/>
   
   <!-- Halloween elements -->
-  <g transform="translate(37.2796639231824, 39.559327846364795) rotate(186) scale(0.5139831961591199)" opacity="0.15">
-    <path stroke="#3D0842" fill="none" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
-  <path stroke="#3D0842" fill="none" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
-  <path stroke="#3D0842" fill="none" d="M6 15 L6 18 L8 20 L10 20"/>
-  <path stroke="#3D0842" fill="none" d="M18 15 L18 18 L16 20 L14 20"/>
-  <path stroke="#3D0842" fill="none" d="M10 20 L14 20"/>
-  <circle stroke="#3D0842" fill="#3D0842" cx="9" cy="11" r="2"/>
-  <circle stroke="#3D0842" fill="#3D0842" cx="15" cy="11" r="2"/>
-  <path stroke="#3D0842" fill="none" d="M12 14 L11 16 L13 16 Z"/>
+  <g transform="translate(37.2796639231824, 39.559327846364795) rotate(186) scale(0.5139831961591199)" opacity="0.3">
+    <path fill="none" stroke="#3D0842" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
+  <path fill="none" stroke="#3D0842" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
+  <path fill="none" stroke="#3D0842" d="M6 15 L6 18 L8 20 L10 20"/>
+  <path fill="none" stroke="#3D0842" d="M18 15 L18 18 L16 20 L14 20"/>
+  <path fill="none" stroke="#3D0842" d="M10 20 L14 20"/>
+  <circle fill="#3D0842" stroke="#3D0842" cx="9" cy="11" r="2"/>
+  <circle fill="#3D0842" stroke="#3D0842" cx="15" cy="11" r="2"/>
+  <path fill="none" stroke="#3D0842" d="M12 14 L11 16 L13 16 Z"/>
   </g>
-  <g transform="translate(149.7505144032922, 64.50102880658437) rotate(224) scale(0.5375257201646082)" opacity="0.15">
-    <path stroke="#D91656" fill="none" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
-  <path stroke="#D91656" fill="none" d="M12 3 L12 1"/>
-  <path stroke="#D91656" fill="none" d="M9 11 L10 13 L8 13 Z"/>
-  <path stroke="#D91656" fill="none" d="M15 11 L16 13 L14 13 Z"/>
-  <path stroke="#D91656" fill="none" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
+  <g transform="translate(149.7505144032922, 64.50102880658437) rotate(224) scale(0.5375257201646082)" opacity="0.3">
+    <path fill="none" stroke="#D91656" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
+  <path fill="none" stroke="#D91656" d="M12 3 L12 1"/>
+  <path fill="none" stroke="#D91656" d="M9 11 L10 13 L8 13 Z"/>
+  <path fill="none" stroke="#D91656" d="M15 11 L16 13 L14 13 Z"/>
+  <path fill="none" stroke="#D91656" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
   </g>
-  <g transform="translate(245.16889574759944, 55.33779149519887) rotate(30) scale(0.6084447873799719)" opacity="0.15">
-    <path stroke="#640D5F" fill="none" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
-  <path stroke="#640D5F" fill="none" d="M12 3 L12 1"/>
-  <path stroke="#640D5F" fill="none" d="M9 11 L10 13 L8 13 Z"/>
-  <path stroke="#640D5F" fill="none" d="M15 11 L16 13 L14 13 Z"/>
-  <path stroke="#640D5F" fill="none" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
+  <g transform="translate(245.16889574759944, 55.33779149519887) rotate(30) scale(0.6084447873799719)" opacity="0.3">
+    <path fill="none" stroke="#640D5F" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
+  <path fill="none" stroke="#640D5F" d="M12 3 L12 1"/>
+  <path fill="none" stroke="#640D5F" d="M9 11 L10 13 L8 13 Z"/>
+  <path fill="none" stroke="#640D5F" d="M15 11 L16 13 L14 13 Z"/>
+  <path fill="none" stroke="#640D5F" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
   </g>
-  <g transform="translate(348.44735939643346, 61.89471879286691) rotate(310) scale(0.47236796982167106)" opacity="0.15">
-    <path stroke="#3D0842" fill="none" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
-  <path stroke="#3D0842" fill="none" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
-  <path stroke="#3D0842" fill="none" d="M6 15 L6 18 L8 20 L10 20"/>
-  <path stroke="#3D0842" fill="none" d="M18 15 L18 18 L16 20 L14 20"/>
-  <path stroke="#3D0842" fill="none" d="M10 20 L14 20"/>
-  <circle stroke="#3D0842" fill="#3D0842" cx="9" cy="11" r="2"/>
-  <circle stroke="#3D0842" fill="#3D0842" cx="15" cy="11" r="2"/>
-  <path stroke="#3D0842" fill="none" d="M12 14 L11 16 L13 16 Z"/>
+  <g transform="translate(348.44735939643346, 61.89471879286691) rotate(310) scale(0.47236796982167106)" opacity="0.3">
+    <path fill="none" stroke="#3D0842" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
+  <path fill="none" stroke="#3D0842" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
+  <path fill="none" stroke="#3D0842" d="M6 15 L6 18 L8 20 L10 20"/>
+  <path fill="none" stroke="#3D0842" d="M18 15 L18 18 L16 20 L14 20"/>
+  <path fill="none" stroke="#3D0842" d="M10 20 L14 20"/>
+  <circle fill="#3D0842" stroke="#3D0842" cx="9" cy="11" r="2"/>
+  <circle fill="#3D0842" stroke="#3D0842" cx="15" cy="11" r="2"/>
+  <path fill="none" stroke="#3D0842" d="M12 14 L11 16 L13 16 Z"/>
   </g>
-  <g transform="translate(45.82733196159123, 156.65466392318245) rotate(32) scale(0.6413665980795622)" opacity="0.15">
-    <path stroke="#FFB200" fill="none" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
-  <path stroke="#FFB200" fill="none" d="M12 3 L12 1"/>
-  <path stroke="#FFB200" fill="none" d="M9 11 L10 13 L8 13 Z"/>
-  <path stroke="#FFB200" fill="none" d="M15 11 L16 13 L14 13 Z"/>
-  <path stroke="#FFB200" fill="none" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
+  <g transform="translate(45.82733196159123, 156.65466392318245) rotate(32) scale(0.6413665980795622)" opacity="0.3">
+    <path fill="none" stroke="#FFB200" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
+  <path fill="none" stroke="#FFB200" d="M12 3 L12 1"/>
+  <path fill="none" stroke="#FFB200" d="M9 11 L10 13 L8 13 Z"/>
+  <path fill="none" stroke="#FFB200" d="M15 11 L16 13 L14 13 Z"/>
+  <path fill="none" stroke="#FFB200" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
   </g>
-  <g transform="translate(161.9041495198902, 158.80829903978042) rotate(80) scale(0.5452074759945117)" opacity="0.15">
-    <circle stroke="#640D5F" fill="#640D5F" cx="12" cy="12" r="8"/>
-  <circle stroke="#640D5F" fill="#640D5F" cx="12" cy="12" r="4"/>
-  <circle stroke="#640D5F" fill="#640D5F" cx="12" cy="12" r="2"/>
+  <g transform="translate(161.9041495198902, 158.80829903978042) rotate(80) scale(0.5452074759945117)" opacity="0.3">
+    <circle fill="#640D5F" stroke="#640D5F" cx="12" cy="12" r="8"/>
+  <circle fill="#640D5F" stroke="#640D5F" cx="12" cy="12" r="4"/>
+  <circle fill="#640D5F" stroke="#640D5F" cx="12" cy="12" r="2"/>
   </g>
-  <g transform="translate(262.878086419753, 160.756172839506) rotate(353) scale(0.5939043209876536)" opacity="0.15">
-    <path stroke="#FFB200" fill="none" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
-  <path stroke="#FFB200" fill="none" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
-  <path stroke="#FFB200" fill="none" d="M6 15 L6 18 L8 20 L10 20"/>
-  <path stroke="#FFB200" fill="none" d="M18 15 L18 18 L16 20 L14 20"/>
-  <path stroke="#FFB200" fill="none" d="M10 20 L14 20"/>
-  <circle stroke="#FFB200" fill="#FFB200" cx="9" cy="11" r="2"/>
-  <circle stroke="#FFB200" fill="#FFB200" cx="15" cy="11" r="2"/>
-  <path stroke="#FFB200" fill="none" d="M12 14 L11 16 L13 16 Z"/>
+  <g transform="translate(262.878086419753, 160.756172839506) rotate(353) scale(0.5939043209876536)" opacity="0.3">
+    <path fill="none" stroke="#FFB200" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
+  <path fill="none" stroke="#FFB200" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
+  <path fill="none" stroke="#FFB200" d="M6 15 L6 18 L8 20 L10 20"/>
+  <path fill="none" stroke="#FFB200" d="M18 15 L18 18 L16 20 L14 20"/>
+  <path fill="none" stroke="#FFB200" d="M10 20 L14 20"/>
+  <circle fill="#FFB200" stroke="#FFB200" cx="9" cy="11" r="2"/>
+  <circle fill="#FFB200" stroke="#FFB200" cx="15" cy="11" r="2"/>
+  <path fill="none" stroke="#FFB200" d="M12 14 L11 16 L13 16 Z"/>
   </g>
-  <g transform="translate(361.3691700960219, 157.73834019204378) rotate(169) scale(0.5184585048010922)" opacity="0.15">
-    <circle stroke="#FFB200" fill="#FFB200" cx="12" cy="12" r="8"/>
-  <circle stroke="#FFB200" fill="#FFB200" cx="12" cy="12" r="4"/>
-  <circle stroke="#FFB200" fill="#FFB200" cx="12" cy="12" r="2"/>
+  <g transform="translate(361.3691700960219, 157.73834019204378) rotate(169) scale(0.5184585048010922)" opacity="0.3">
+    <circle fill="#FFB200" stroke="#FFB200" cx="12" cy="12" r="8"/>
+  <circle fill="#FFB200" stroke="#FFB200" cx="12" cy="12" r="4"/>
+  <circle fill="#FFB200" stroke="#FFB200" cx="12" cy="12" r="2"/>
   </g>
-  <g transform="translate(61.01251714677642, 257.02503429355284) rotate(348) scale(0.5006258573388186)" opacity="0.15">
-    <circle stroke="#D91656" fill="#D91656" cx="12" cy="12" r="8"/>
-  <circle stroke="#D91656" fill="#D91656" cx="12" cy="12" r="4"/>
-  <circle stroke="#D91656" fill="#D91656" cx="12" cy="12" r="2"/>
+  <g transform="translate(61.01251714677642, 257.02503429355284) rotate(348) scale(0.5006258573388186)" opacity="0.3">
+    <circle fill="#D91656" stroke="#D91656" cx="12" cy="12" r="8"/>
+  <circle fill="#D91656" stroke="#D91656" cx="12" cy="12" r="4"/>
+  <circle fill="#D91656" stroke="#D91656" cx="12" cy="12" r="2"/>
   </g>
-  <g transform="translate(145.40209190672152, 255.80418381344307) rotate(121) scale(0.6201045953360771)" opacity="0.15">
-    <path stroke="#EB5B00" fill="none" d="M12 3 C8 3 5 6 5 10 L5 18 L7 16 L9 18 L11 16 L13 18 L15 16 L17 18 L19 16 L19 10 C19 6 16 3 12 3 Z"/>
-  <circle stroke="#EB5B00" fill="#EB5B00" cx="9" cy="10" r="1" fill="#EB5B00"/>
-  <circle stroke="#EB5B00" fill="#EB5B00" cx="15" cy="10" r="1" fill="#EB5B00"/>
+  <g transform="translate(145.40209190672152, 255.80418381344307) rotate(121) scale(0.6201045953360771)" opacity="0.3">
+    <path fill="none" stroke="#EB5B00" d="M12 3 C8 3 5 6 5 10 L5 18 L7 16 L9 18 L11 16 L13 18 L15 16 L17 18 L19 16 L19 10 C19 6 16 3 12 3 Z"/>
+  <circle stroke="#EB5B00" cx="9" cy="10" r="1" fill="#EB5B00"/>
+  <circle stroke="#EB5B00" cx="15" cy="10" r="1" fill="#EB5B00"/>
   </g>
-  <g transform="translate(253.46793552812062, 241.93587105624124) rotate(145) scale(0.4233967764060344)" opacity="0.15">
-    <path stroke="#D91656" fill="none" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
-  <path stroke="#D91656" fill="none" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
-  <path stroke="#D91656" fill="none" d="M6 15 L6 18 L8 20 L10 20"/>
-  <path stroke="#D91656" fill="none" d="M18 15 L18 18 L16 20 L14 20"/>
-  <path stroke="#D91656" fill="none" d="M10 20 L14 20"/>
-  <circle stroke="#D91656" fill="#D91656" cx="9" cy="11" r="2"/>
-  <circle stroke="#D91656" fill="#D91656" cx="15" cy="11" r="2"/>
-  <path stroke="#D91656" fill="none" d="M12 14 L11 16 L13 16 Z"/>
+  <g transform="translate(253.46793552812062, 241.93587105624124) rotate(145) scale(0.4233967764060344)" opacity="0.3">
+    <path fill="none" stroke="#D91656" d="M12 3 C8 3 5 6 5 10 C5 12 5 14 6 15"/>
+  <path fill="none" stroke="#D91656" d="M12 3 C16 3 19 6 19 10 C19 12 19 14 18 15"/>
+  <path fill="none" stroke="#D91656" d="M6 15 L6 18 L8 20 L10 20"/>
+  <path fill="none" stroke="#D91656" d="M18 15 L18 18 L16 20 L14 20"/>
+  <path fill="none" stroke="#D91656" d="M10 20 L14 20"/>
+  <circle fill="#D91656" stroke="#D91656" cx="9" cy="11" r="2"/>
+  <circle fill="#D91656" stroke="#D91656" cx="15" cy="11" r="2"/>
+  <path fill="none" stroke="#D91656" d="M12 14 L11 16 L13 16 Z"/>
   </g>
-  <g transform="translate(348.48851165980795, 261.9770233196159) rotate(220) scale(0.4744255829903978)" opacity="0.15">
-    <path stroke="#EB5B00" fill="none" d="M4 18 L20 18 C20 18 19 16 17 16 L7 16 C5 16 4 18 4 18 Z"/>
-  <path stroke="#EB5B00" fill="none" d="M7 16 L12 3 L17 16"/>
-  <rect x="10" y="13" width="4" height="2"/>
+  <g transform="translate(348.48851165980795, 261.9770233196159) rotate(220) scale(0.4744255829903978)" opacity="0.3">
+    <path fill="none" stroke="#EB5B00" d="M4 18 L20 18 C20 18 19 16 17 16 L7 16 C5 16 4 18 4 18 Z"/>
+  <path fill="none" stroke="#EB5B00" d="M7 16 L12 3 L17 16"/>
+  <rect fill="none" stroke="#EB5B00" x="10" y="13" width="4" height="2"/>
   </g>
-  <g transform="translate(54.45558984910838, 343.91117969821676) rotate(148) scale(0.4727794924554155)" opacity="0.15">
-    <path stroke="#EB5B00" fill="none" d="M4 18 L20 18 C20 18 19 16 17 16 L7 16 C5 16 4 18 4 18 Z"/>
-  <path stroke="#EB5B00" fill="none" d="M7 16 L12 3 L17 16"/>
-  <rect x="10" y="13" width="4" height="2"/>
+  <g transform="translate(54.45558984910838, 343.91117969821676) rotate(148) scale(0.4727794924554155)" opacity="0.3">
+    <path fill="none" stroke="#EB5B00" d="M4 18 L20 18 C20 18 19 16 17 16 L7 16 C5 16 4 18 4 18 Z"/>
+  <path fill="none" stroke="#EB5B00" d="M7 16 L12 3 L17 16"/>
+  <rect fill="none" stroke="#EB5B00" x="10" y="13" width="4" height="2"/>
   </g>
-  <g transform="translate(159.764231824417, 354.528463648834) rotate(74) scale(0.4382115912208504)" opacity="0.15">
-    <path stroke="#3D0842" fill="none" d="M12 3 C8 3 5 6 5 10 L5 18 L7 16 L9 18 L11 16 L13 18 L15 16 L17 18 L19 16 L19 10 C19 6 16 3 12 3 Z"/>
-  <circle stroke="#3D0842" fill="#3D0842" cx="9" cy="10" r="1" fill="#3D0842"/>
-  <circle stroke="#3D0842" fill="#3D0842" cx="15" cy="10" r="1" fill="#3D0842"/>
+  <g transform="translate(159.764231824417, 354.528463648834) rotate(74) scale(0.4382115912208504)" opacity="0.3">
+    <path fill="none" stroke="#3D0842" d="M12 3 C8 3 5 6 5 10 L5 18 L7 16 L9 18 L11 16 L13 18 L15 16 L17 18 L19 16 L19 10 C19 6 16 3 12 3 Z"/>
+  <circle stroke="#3D0842" cx="9" cy="10" r="1" fill="#3D0842"/>
+  <circle stroke="#3D0842" cx="15" cy="10" r="1" fill="#3D0842"/>
   </g>
-  <g transform="translate(236.70524691358025, 338.4104938271605) rotate(275) scale(0.4852623456790116)" opacity="0.15">
-    <path stroke="#C6C6C6" fill="none" d="M4 18 L20 18 C20 18 19 16 17 16 L7 16 C5 16 4 18 4 18 Z"/>
-  <path stroke="#C6C6C6" fill="none" d="M7 16 L12 3 L17 16"/>
-  <rect x="10" y="13" width="4" height="2"/>
+  <g transform="translate(236.70524691358025, 338.4104938271605) rotate(275) scale(0.4852623456790116)" opacity="0.3">
+    <path fill="none" stroke="#C6C6C6" d="M4 18 L20 18 C20 18 19 16 17 16 L7 16 C5 16 4 18 4 18 Z"/>
+  <path fill="none" stroke="#C6C6C6" d="M7 16 L12 3 L17 16"/>
+  <rect fill="none" stroke="#C6C6C6" x="10" y="13" width="4" height="2"/>
   </g>
-  <g transform="translate(352.4939986282579, 339.98799725651577) rotate(232) scale(0.6746999314128947)" opacity="0.15">
-    <path stroke="#FFB200" fill="none" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
-  <path stroke="#FFB200" fill="none" d="M12 3 L12 1"/>
-  <path stroke="#FFB200" fill="none" d="M9 11 L10 13 L8 13 Z"/>
-  <path stroke="#FFB200" fill="none" d="M15 11 L16 13 L14 13 Z"/>
-  <path stroke="#FFB200" fill="none" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
+  <g transform="translate(352.4939986282579, 339.98799725651577) rotate(232) scale(0.6746999314128947)" opacity="0.3">
+    <path fill="none" stroke="#FFB200" d="M12 3 C8 3 5 6 5 10 C5 14 5 17 5 19 C5 20.5 6.5 21 8 21 L16 21 C17.5 21 19 20.5 19 19 C19 17 19 14 19 10 C19 6 16 3 12 3 Z"/>
+  <path fill="none" stroke="#FFB200" d="M12 3 L12 1"/>
+  <path fill="none" stroke="#FFB200" d="M9 11 L10 13 L8 13 Z"/>
+  <path fill="none" stroke="#FFB200" d="M15 11 L16 13 L14 13 Z"/>
+  <path fill="none" stroke="#FFB200" d="M8 16 L9 17 L10 16 L11 17 L12 16 L13 17 L14 16 L15 17 L16 16"/>
   </g>
 </svg>
