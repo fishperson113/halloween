@@ -1,12 +1,11 @@
-// HALLOWEEN PALETTE
-// pumpkinOrange: #FF7A18
-// witchPurple:   #6A0D83
-// toxicGreen:    #4EF17B
-// bloodRed:      #FF2E4C
+// VIBRANT PALETTE
+// goldenYellow:  #FFB200
+// burntOrange:   #EB5B00
+// hotPink:       #D91656
+// deepPurple:    #640D5F
+// darkPurple:    #3D0842
+// veryDark:      #1A0A1F
 // fogGrey:       #C6C6C6
-// midnightBlack: #0B0B0F
-// voidNavy:      #1A1A29
-// hauntedBlue:   #3849FF
 
 {
 	"$schema": "vscode://schemas/color-theme",
@@ -14,51 +13,57 @@
 	"type": "dark",
 
 	"colors": {
-	"editor.background": "#0B0B0F",   // midnightBlack
+	// Editor Background Configuration
+	// The editor background uses veryDark (#1A0A1F) as the base color.
+	// A Halloween-themed background pattern can be overlaid using CSS customization.
+	// Background pattern asset: ../assets/background-pattern.svg
+	// Recommended opacity: 0.02-0.08 for subtlety and readability
+	// The pattern tiles seamlessly and uses colors from the Kiroween palette
+	"editor.background": "#1A0A1F",   // veryDark
 	"editor.foreground": "#C6C6C6",   // fogGrey
 
 	// Side Bar
-	"sideBar.background": "#6A0D83",          // witchPurple
+	"sideBar.background": "#3D0842",          // darkPurple
 	"sideBar.foreground": "#C6C6C6",
-	"sideBar.border": "#6A0D83",
+	"sideBar.border": "#3D0842",
 
 	// Activity Bar
-	"activityBar.background": "#4A0560",      // darker witchPurple
-	"activityBar.foreground": "#FF7A18",      // pumpkinOrange (icon glow)
-	"activityBar.activeBorder": "#FF2E4C",    // bloodRed
-	"activityBar.inactiveForeground": "#C6C6C6",
+	"activityBar.background": "#EB5B00",      // burntOrange
+	"activityBar.foreground": "#FFB200",      // goldenYellow (icon glow)
+	"activityBar.activeBorder": "#FFB200",    // goldenYellow
+	"activityBar.inactiveForeground": "#FFFFFF",
 
 	// Status Bar
-	"statusBar.background": "#FF7A18",        // pumpkinOrange
-	"statusBar.foreground": "#0B0B0F",
-	"statusBar.border": "#FF2E4C",
+	"statusBar.background": "#EB5B00",        // burntOrange
+	"statusBar.foreground": "#FFFFFF",
+	"statusBar.border": "#FFB200",
 
 	// Tabs
-	"tab.activeBackground": "#1A1A29",        // voidNavy
-	"tab.inactiveBackground": "#0B0B0F",
-	"tab.activeBorderTop": "#FF2E4C",         // bloodRed
+	"tab.activeBackground": "#1A0A1F",        // veryDark
+	"tab.inactiveBackground": "#0D0510",
+	"tab.activeBorderTop": "#FFB200",         // goldenYellow
 	"tab.inactiveForeground": "#C6C6C6",
 
 	// Panel / Terminal
-	"panel.background": "#1A1A29",
-	"terminal.background": "#1A1A29",
-	"panel.border": "#6A0D83",
+	"panel.background": "#1A0A1F",
+	"terminal.background": "#1A0A1F",
+	"panel.border": "#EB5B00",
 
 	// Editor Highlights
-	"editorLineNumber.foreground": "#6A0D83",
-	"editorCursor.foreground": "#FF7A18",
-	"editor.selectionBackground": "#4EF17B44",   // toxicGreen (transparent)
-	"editor.selectionHighlightBackground": "#4EF17B22",
-	"editor.lineHighlightBackground": "#6A0D8311",
+	"editorLineNumber.foreground": "#EB5B00",
+	"editorCursor.foreground": "#FFB200",
+	"editor.selectionBackground": "#D9165644",   // hotPink (transparent)
+	"editor.selectionHighlightBackground": "#D9165622",
+	"editor.lineHighlightBackground": "#EB5B0022",
 
 	// Scrollbars
-	"scrollbarSlider.background": "#6A0D8366",
-	"scrollbarSlider.hoverBackground": "#6A0D8388",
-	"scrollbarSlider.activeBackground": "#FF7A18AA",
+	"scrollbarSlider.background": "#EB5B0066",
+	"scrollbarSlider.hoverBackground": "#EB5B0088",
+	"scrollbarSlider.activeBackground": "#FFB200AA",
 
 	// Badges (hover info, etc.)
-	"badge.background": "#FF2E4C",
-	"badge.foreground": "#FFFFFF"
+	"badge.background": "#FFB200",
+	"badge.foreground": "#1A0A1F"
 	},
 
 
@@ -82,7 +87,7 @@
 				"string.template"
 			],
 			"settings": {
-				"foreground": "#4EF17B"
+				"foreground": "#D91656"
 			}
 		},
 		{
@@ -92,7 +97,7 @@
 				"punctuation.definition.template-expression"
 			],
 			"settings": {
-				"foreground": "#FF7A18"
+				"foreground": "#EB5B00"
 			}
 		},
 		{
@@ -103,7 +108,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#FF7A18"
+				"foreground": "#EB5B00"
 			}
 		},
 		{
@@ -114,7 +119,7 @@
 				"keyword.operator.expression"
 			],
 			"settings": {
-				"foreground": "#FF7A18",
+				"foreground": "#EB5B00",
 				"fontStyle": "bold"
 			}
 		},
@@ -137,7 +142,7 @@
 				"meta.function-call"
 			],
 			"settings": {
-				"foreground": "#3849FF"
+				"foreground": "#FFB200"
 			}
 		},
 		{
@@ -149,7 +154,7 @@
 				"support.class"
 			],
 			"settings": {
-				"foreground": "#3849FF",
+				"foreground": "#FFB200",
 				"fontStyle": "bold"
 			}
 		},
@@ -161,7 +166,7 @@
 				"constant.character"
 			],
 			"settings": {
-				"foreground": "#FF7A18"
+				"foreground": "#EB5B00"
 			}
 		},
 		{
@@ -182,7 +187,7 @@
 				"constant.character.escape"
 			],
 			"settings": {
-				"foreground": "#FF7A18"
+				"foreground": "#EB5B00"
 			}
 		},
 		{
@@ -193,7 +198,7 @@
 				"invalid.deprecated"
 			],
 			"settings": {
-				"foreground": "#FF2E4C",
+				"foreground": "#D91656",
 				"fontStyle": "bold underline"
 			}
 		},
@@ -203,7 +208,7 @@
 				"support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#3849FF"
+				"foreground": "#FFB200"
 			}
 		},
 		{
@@ -213,7 +218,7 @@
 				"entity.name.section"
 			],
 			"settings": {
-				"foreground": "#FF7A18",
+				"foreground": "#EB5B00",
 				"fontStyle": "bold"
 			}
 		},
@@ -223,7 +228,7 @@
 				"markup.bold"
 			],
 			"settings": {
-				"foreground": "#FF7A18",
+				"foreground": "#EB5B00",
 				"fontStyle": "bold"
 			}
 		},
@@ -233,7 +238,7 @@
 				"markup.italic"
 			],
 			"settings": {
-				"foreground": "#4EF17B",
+				"foreground": "#D91656",
 				"fontStyle": "italic"
 			}
 		},
@@ -244,7 +249,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#3849FF",
+				"foreground": "#FFB200",
 				"fontStyle": "underline"
 			}
 		}

@@ -1,0 +1,61 @@
+/**
+ * Kiroween Halloween Background Overlay
+ * 
+ * This CSS file applies a subtle Halloween-themed background pattern
+ * to the VSCode editor. The pattern uses existing Halloween assets
+ * (ghosts, pumpkins, skulls, etc.) with carefully tuned opacity
+ * to maintain code readability.
+ * 
+ * Requirements: 1.1, 1.4, 3.4
+ * - Displays Halloween-themed background when theme is activated
+ * - Tiles seamlessly across the editor surface
+ * - Uses appropriate CSS properties for opacity and blend mode
+ */
+
+/* Target the main editor content area */
+.monaco-editor .view-lines {
+  /* Background image using the generated Halloween pattern */
+  background-image: url('../assets/background-pattern.svg');
+  
+  /* Seamless tiling across the entire editor */
+  background-repeat: repeat;
+  
+  /* Pattern tile size - matches the SVG viewBox (400x400) */
+  background-size: 400px 400px;
+  
+  /* Center the pattern for consistent appearance */
+  background-position: center;
+  
+  /* Ensure the background pattern is fixed during scrolling */
+  /* This creates a subtle parallax effect */
+  background-attachment: local;
+  
+  /* Subtle opacity (0.05 = 5%) to maintain readability */
+  /* Valid range: 0.02-0.08 per requirements */
+  opacity: 0.05;
+  
+  /* Blend mode to integrate with editor colors */
+  /* 'lighten' works well with dark themes */
+  mix-blend-mode: lighten;
+  
+  /* Ensure the background doesn't interfere with text selection */
+  pointer-events: none;
+}
+
+/* Alternative: Apply background to the entire editor container
+ * Uncomment this section if you prefer the background behind all editor elements
+ */
+/*
+.monaco-editor {
+  background-image: url('../assets/background-pattern.svg');
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  background-position: center;
+}
+
+.monaco-editor .view-lines {
+  background: transparent;
+  opacity: 0.05;
+  mix-blend-mode: lighten;
+}
+*/

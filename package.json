@@ -4,10 +4,14 @@
   "description": "This is a halloween VSCode theme making for Kiroween Hackathon",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.106.1"
+    "vscode": "^1.103.0"
   },
   "categories": [
     "Themes"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
   ],
   "contributes": {
     "themes": [
@@ -17,20 +21,33 @@
         "path": "./themes/KiroTheme-color-theme.json"
       }
     ],
-    "iconThemes": [
-      {
-        "id": "kiroween-file-icons",
-        "label": "Kiroween File Icons",
-        "path": "./themes/file-icon-theme.json"
-      }
-    ],
     "productIconThemes": [
       {
         "id": "kiroween-icons",
         "label": "Kiroween Icons",
         "path": "./themes/product-icon-theme.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "kiroween.toggleBackground",
+        "title": "Kiroween: Toggle Halloween Background"
+      },
+      {
+        "command": "kiroween.showCssPath",
+        "title": "Kiroween: Show Background CSS Path"
+      }
+    ],
+    "configuration": {
+      "title": "Kiroween",
+      "properties": {
+        "kiroween.background.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the Halloween background pattern in the editor"
+        }
+      }
+    }
   },
   "scripts": {
     "test": "node test-icons-pbt.js",
